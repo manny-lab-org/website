@@ -1,32 +1,27 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>Manny Lab</title>
-    <style>
-        /* Base academic serif font */
-        body { font-family: 'Crimson Pro', serif; color: #002B36; }
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: center; /* Center the whole header */
-            padding: 2rem 1rem;
-            border-bottom: 2px solid #e0e0e0; /* Match the line in SVG */
-        }
-        .logo-link {
-            display: flex;
-            align-items: center;
-            text-decoration: none; /* No underline */
-        }
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="80" viewBox="0 0 300 80">
+  <defs>
+    <linearGradient id="symbol_gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#002B36;stop-opacity:1" /> <stop offset="100%" style="stop-color:#014B5C;stop-opacity:1" /> </linearGradient>
+    
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500&amp;display=swap');
+      .logo-text {
+        font-family: 'Crimson Pro', serif; /* A very close approximation for LaTeX CM Serif */
+        font-size: 36px;
+        font-weight: 500;
+        fill: #002B36; /* Deep Navy */
+      }
     </style>
-</head>
-<body>
-    <header>
-        <a href="/" class="logo-link">
-            <img src="images/logo.svg" alt="Manny Lab Logo" style="height: 60px; width: auto;">
-        </a>
-    </header>
-    <main>
-        </main>
-</body>
-</html>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <path d="M15 10 C20 -5, 30 5, 25 15 C20 25, 10 30, 10 40 C10 50, 20 55, 30 50 C40 45, 45 35, 40 25 L 35 15 C30 5, 20 0, 15 10 Z" 
+          fill="url(#symbol_gradient)" />
+    <circle cx="20" cy="30" r="3" fill="#014B5C" />
+  </g>
+
+  <text x="65" y="52" class="logo-text">Manny Lab</text>
+  
+  <rect x="0" y="75" width="300" height="2" fill="#e0e0e0" />
+
+</svg>
