@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Manny Lab</title>
+    <style>
+        /* Base academic serif font */
+        body { font-family: 'Crimson Pro', serif; color: #002B36; }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the whole header */
+            padding: 2rem 1rem;
+            border-bottom: 2px solid #e0e0e0; /* Match the line in SVG */
+        }
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none; /* No underline */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo-link">
+            <img src="images/logo.svg" alt="Manny Lab Logo" style="height: 60px; width: auto;">
+        </a>
+    </header>
+    <main>
+        </main>
+</body>
+</html>
