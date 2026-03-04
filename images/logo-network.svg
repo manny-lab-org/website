@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="80" viewBox="0 0 300 80">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500&amp;display=swap');
+      .logo-text {
+        font-family: 'Crimson Pro', serif;
+        font-size: 36px;
+        font-weight: 500;
+        fill: #002B36; /* Deep Navy */
+      }
+      .node {
+        fill: #002B36; /* Deep Navy */
+      }
+      .link {
+        stroke: #e0e0e0;
+        stroke-width: 1.5;
+      }
+      .highlight-node {
+        fill: #014B5C; /* Azure Blue Accent */
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(15, 15)">
+    <line x1="10" y1="10" x2="30" y2="10" class="link" />
+    <line x1="10" y1="10" x2="10" y2="30" class="link" />
+    <line x1="10" y1="10" x2="30" y2="30" class="link" />
+    
+    <line x1="30" y1="10" x2="30" y2="30" class="link" />
+    <line x1="30" y1="10" x2="10" y2="30" class="link" />
+    
+    <line x1="10" y1="30" x2="30" y2="30" class="link" />
+    
+    <line x1="30" y1="30" x2="40" y2="50" class="link" />
+    <line x1="10" y1="30" x2="40" y2="50" class="link" />
+    <line x1="30" y1="10" x2="40" y2="50" class="link" />
+    
+    <circle cx="10" cy="10" r="4" class="node" />
+    <circle cx="30" cy="10" r="4" class="node" />
+    <circle cx="10" cy="30" r="4" class="node" />
+    <circle cx="30" cy="30" r="4" class="node" />
+    <circle cx="40" cy="50" r="4" class="highlight-node" /> </g>
+
+  <text x="65" y="52" class="logo-text">Manny Lab</text>
+  
+  <rect x="0" y="75" width="300" height="2" fill="#e0e0e0" />
+
+</svg>
