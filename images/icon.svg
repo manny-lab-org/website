@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="icon_green_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B4619;stop-opacity:1" /> <stop offset="100%" style="stop-color:#15803D;stop-opacity:1" /> </linearGradient>
+    
+    <filter id="logoShadow" x="0" y="0" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="2" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+
+  <circle cx="256" cy="256" r="240" fill="#F8F9FA" />
+  
+  <g transform="translate(106, 206) scale(1.5)" opacity="0.6">
+    <path d="M 0 50 L 150 0 L 200 50 L 50 100 Z" fill="#C3DBC5" />
+    <path d="M 150 0 L 200 50 L 200 80 L 150 30 Z" fill="#A7D7C5" />
+    <path d="M 0 50 L 50 100 L 50 130 L 0 80 Z" fill="#99C1A6" />
+  </g>
+  
+  <text x="256" y="295" font-family="'Crimson Pro', serif" font-size="64" font-weight="500" fill="#0B4619" text-anchor="middle">Manny Lab</text>
+
+  <g transform="translate(136, 116) scale(6)" filter="url(#logoShadow)">
+    <line x1="10" y1="10" x2="35" y2="15" stroke="#15803D" stroke-width="1.5" opacity="0.3" />
+    <line x1="10" y1="10" x2="15" y2="40" stroke="#15803D" stroke-width="1.5" opacity="0.3" />
+    <line x1="35" y1="15" x2="15" y2="40" stroke="#15803D" stroke-width="1.5" opacity="0.3" />
+    
+    <g transform="translate(10, 10)">
+      <rect x="-4" y="-4" width="8" height="8" fill="#0B4619" />
+      <rect x="-2" y="-2" width="4" height="4" fill="#15803D" />
+    </g>
+    <g transform="translate(35, 15)">
+      <rect x="-4" y="-4" width="8" height="8" fill="#0B4619" />
+      <rect x="-2" y="-2" width="4" height="4" fill="#15803D" />
+    </g>
+    <g transform="translate(15, 40)">
+      <rect x="-6" y="-6" width="12" height="12" fill="url(#icon_green_grad)" />
+      <rect x="-3" y="-3" width="6" height="6" fill="#FFF" />
+    </g>
+  </g>
+</svg>
